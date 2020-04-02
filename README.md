@@ -16,10 +16,10 @@ TI-83 Plus: `Asm(prgmZ180TEST)` or `Asm(prgmZ180BTST):Ans`
 TI-86: `Asm(Z180TEST)` or `Asm(Z180BTST):Ans`
 
 ## But the TI-73 doesn't have nostub assembly!
-This is compiled for the Mallard shell. OS 1.60 is preferred, and expects [Mallard 0.2](https://www.ticalc.org/archives/files/fileinfo/366/36618.html). Other OSes can try using [Mallard 0.3](https://www.ticalc.org/archives/files/fileinfo/388/38805.html), but successful execution is not guaranteed. 
+This is assembled for the Mallard shell. OS 1.60 is preferred, and expects [Mallard 0.2](https://www.ticalc.org/archives/files/fileinfo/366/36618.html). Other OSes can try using [Mallard 0.3](https://www.ticalc.org/archives/files/fileinfo/388/38805.html), but successful execution is not guaranteed. Z180BTST assembles fine and is included because of this, but isn't of any real utility since assembly can only be launched from the Mallard shell. 
 
 ## What about the TI-82 and TI-85?
-I could port Z180TEST over to those calculators. All TI-85s have Z80s, though. The TI-82 shares a lot of hardware with the TI-83, especially around the time the TI-83 had the relevant hardware revision, so Z180TEST has some utility there. However, Z180BTST makes some ROM calls that aren't documented on those models, so that's not getting ported over. You're free to try, though. 
+I could port Z180TEST over to those calculators. All TI-85s have Z80s, though. The TI-82 shares a lot of hardware with the TI-83, especially around the time the TI-83 had the relevant hardware revision, so Z180TEST has some utility there. However, Z180BTST makes some ROM calls that aren't documented on those models, plus there's no inline assembly execution within TI-BASIC programs. 
 
 ## I want to build this. Where's the includes?
 For licensing reasons, I haven't uploaded them here. I prefer BrandonW's Ultimate Include Files for [TI-83](https://www.ticalc.org/archives/files/fileinfo/372/37258.html), [TI-83 Plus](https://www.ticalc.org/archives/files/fileinfo/372/37242.html), and [TI-86](https://www.ticalc.org/archives/files/fileinfo/350/35008.html). Mallard provides an include file. I've only made modifications to allow the include files to work in Brass. 
